@@ -6,6 +6,16 @@ body {
 	font-family:'Open Sans', sans-serif;
 	font-size: 16px;	
 }
+.dark-mode {
+	background-color: rgb(2, 20, 73);
+	color: 747ED3;
+
+}
+
+.light-mode {
+	background-color: 747ED3;
+	color: rgb(2, 20, 73);
+}
 .text { 
 	color: black; 
 }	 
@@ -24,7 +34,6 @@ ul, li{
     max-width: 1200px; 
     margin: 0 auto;
     padding: 20px;
-    overflow: hidden; 
     box-sizing: border-box;
 }
 .block{
@@ -46,7 +55,8 @@ ul, li{
     
 }
 .shapka li{
-	margin-right: 133px
+	margin-right: 133px;
+ 
 }
 
 .nav {
@@ -306,3 +316,34 @@ ul, li{
   #slaid3:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
 	transform: translateX(-200%);
   }
+  .logo {
+	width: 100px;
+	height: auto;
+	display: block; 
+	margin: 0 50px;
+}
+.footer {
+    background-color: #2f3542; 
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.infocard {
+    display: flex; 
+    align-items: center; 
+}
+.iconfoot{
+	flex-direction: row;
+	width: 60px;
+	height: 60px;
+}
+
+
