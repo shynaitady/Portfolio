@@ -4,18 +4,37 @@ body {
 	overflow: hidden;
 	font-family: 'Anton', sans-serif;
 	font-family:'Open Sans', sans-serif;
-	font-size: 16px;	
+	font-size: 16px;
+	zoom: 90%	
+}
+.header {
+    color: #021449; 
+}
+.header a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s ease; 
+}
+
+.dark-mode .header a {
+    color: white; 
+}
+
+.light-mode .header a  {
+    color: #021449; 
+}
+.dark-mode .header {
+    color: white;
 }
 .dark-mode {
-	background-color: rgb(2, 20, 73);
-	color: 747ED3;
-
+	background-color: #021449; 
+	color: #747ED3;
 }
-
-.light-mode {
-	background-color: 747ED3;
-	color: rgb(2, 20, 73);
-}
+  
+.light-mode { 
+	background-color: #747ED3; 
+	color: #021449; 
+  }
 .text { 
 	color: black; 
 }	 
@@ -328,22 +347,64 @@ ul, li{
     text-align: center;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-
+    flex-shrink: 0; 
 }
 
 .footer .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
 }
+
 .infocard {
     display: flex; 
     align-items: center; 
-}
-.iconfoot{
-	flex-direction: row;
-	width: 60px;
-	height: 60px;
+    justify-content: center; 
 }
 
+.iconfoot {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0; 
+    margin: 0 10px; 
+}
 
+.footer {
+    width: 100%;
+    height: 30px; /* Adjust height as needed */
+    background-color: #2f3542;
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 20px; 
+	margin-bottom: 15px;
+}
+
+.infocard .iconfoot {
+	width: 40px;
+	height: 40px;
+}
+
+.creator-info {
+	color: #ccc;
+	font-size: 16px;
+	margin-top: 10px;
+}
