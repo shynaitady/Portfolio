@@ -15,7 +15,6 @@ function lightMode() {
 document.addEventListener("DOMContentLoaded", function () {
     const scrollUpButton = document.getElementById("scrollUp");
 
-    // Show the button when scrolling down
     window.onscroll = function () {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             scrollUpButton.style.display = "block";
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Scroll to the top when the button is clicked
     scrollUpButton.onclick = function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
